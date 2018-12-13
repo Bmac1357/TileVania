@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 4ec4780141904e64c8e37f08cf9fd0b2
+guid: 252f2100e655469419ba3bd58608b173
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SPA_Rock_Grass_Water_0
-    21300002: SPA_Rock_Grass_Water_1
-    21300004: SPA_Rock_Grass_Water_2
-    21300006: SPA_Rock_Grass_Water_3
-    21300008: SPA_Rock_Grass_Water_4
-    21300010: SPA_Rock_Grass_Water_5
-    21300012: SPA_Rock_Grass_Water_6
-    21300014: SPA_Rock_Grass_Water_7
-    21300016: SPA_Rock_Grass_Water_8
-    21300018: SPA_Rock_Grass_Water_9
-    21300020: SPA_Rock_Grass_Water_10
-    21300022: SPA_Rock_Grass_Water_11
-    21300024: SPA_Rock_Grass_Water_12
-    21300026: SPA_Rock_Grass_Water_13
-    21300028: SPA_Rock_Grass_Water_14
-    21300030: SPA_Rock_Grass_Water_15
-    21300032: SPA_Rock_Grass_Water_16
-    21300034: SPA_Rock_Grass_Water_17
-    21300036: SPA_Rock_Grass_Water_18
-    21300038: SPA_Rock_Grass_Water_19
-    21300040: SPA_Rock_Grass_Water_20
-    21300042: SPA_Rock_Grass_Water_21
-    21300044: SPA_Rock_Grass_Water_22
-    21300046: SPA_Rock_Grass_Water_23
-    21300048: SPA_Rock_Grass_Water_24
-    21300050: SPA_Rock_Grass_Water_25
-    21300052: SPA_Rock_Grass_Water_26
-    21300054: SPA_Rock_Grass_Water_27
-    21300056: SPA_Rock_Grass_Water_28
-    21300058: SPA_Rock_Grass_Water_29
+    21300000: SPA_Player_Ginger_0
+    21300002: SPA_Player_Ginger_1
+    21300004: SPA_Player_Ginger_2
+    21300006: SPA_Player_Ginger_3
+    21300008: SPA_Player_Ginger_4
+    21300010: SPA_Player_Ginger_5
+    21300012: SPA_Player_Ginger_6
+    21300014: SPA_Player_Ginger_7
+    21300016: SPA_Player_Ginger_8
+    21300018: SPA_Player_Ginger_9
+    21300020: SPA_Player_Ginger_10
+    21300022: SPA_Player_Ginger_11
+    21300024: SPA_Player_Ginger_12
+    21300026: SPA_Player_Ginger_13
+    21300028: SPA_Player_Ginger_14
+    21300030: SPA_Player_Ginger_15
+    21300032: SPA_Player_Ginger_16
+    21300034: SPA_Player_Ginger_17
+    21300036: SPA_Player_Ginger_18
+    21300038: SPA_Player_Ginger_19
+    21300040: SPA_Player_Ginger_20
+    21300042: SPA_Player_Ginger_21
+    21300044: SPA_Player_Ginger_22
+    21300046: SPA_Player_Ginger_23
+    21300048: SPA_Player_Ginger_24
+    21300050: SPA_Player_Ginger_25
+    21300052: SPA_Player_Ginger_26
+    21300054: SPA_Player_Ginger_27
+    21300056: SPA_Player_Ginger_28
+    21300058: SPA_Player_Ginger_29
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -136,593 +136,593 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_0
+      name: SPA_Player_Ginger_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 190
-        width: 32
-        height: 32
+        x: 4
+        y: 196
+        width: 24
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fab9ee0e5a2b05e4097d35fd09f5faa5
+      spriteID: 7e4974460c4a1dc43b4dc649392e3729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_1
+      name: SPA_Player_Ginger_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 190
-        width: 32
-        height: 32
+        x: 44
+        y: 196
+        width: 24
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf9556300a26be44fa95c62b0211958b
+      spriteID: 3d577209f55495d44b491d411dfc1b08
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_2
+      name: SPA_Player_Ginger_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 190
-        width: 32
-        height: 32
+        x: 80
+        y: 196
+        width: 24
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41bd5211a9d770f48a048879e1faee61
+      spriteID: 194c5405e6712ff499819d1900c97fc9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_3
+      name: SPA_Player_Ginger_3
       rect:
         serializedVersion: 2
-        x: 114
-        y: 190
-        width: 32
-        height: 32
+        x: 118
+        y: 196
+        width: 24
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ebbf00e040fd7f4c8c528a2f2062e66
+      spriteID: 82b3e972d7841a34e90f31ab51117501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_4
+      name: SPA_Player_Ginger_4
       rect:
         serializedVersion: 2
-        x: 152
-        y: 190
-        width: 32
-        height: 32
+        x: 154
+        y: 196
+        width: 24
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22a711fb15cb218489361c8c9baba55b
+      spriteID: 3af01f4aa3459d342a6cd4ee9d0282da
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_5
+      name: SPA_Player_Ginger_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 152
-        width: 32
-        height: 32
+        x: 4
+        y: 158
+        width: 22
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b540e39572780434ca112923bfdb0909
+      spriteID: 7f906f2433c3df448b7d8fd2ab3fe975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_6
+      name: SPA_Player_Ginger_6
       rect:
         serializedVersion: 2
-        x: 38
-        y: 152
-        width: 32
-        height: 32
+        x: 40
+        y: 158
+        width: 24
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 502b157ba9d90464ba84f193888dcb89
+      spriteID: c5015c35ccf9cac4288b2d0c0c85f087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_7
+      name: SPA_Player_Ginger_7
       rect:
         serializedVersion: 2
-        x: 76
-        y: 152
-        width: 32
-        height: 32
+        x: 80
+        y: 158
+        width: 22
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c13ad9ecf4456349a50abf11ba0844d
+      spriteID: fc1b8212743940c4694f235db4b65b40
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_8
+      name: SPA_Player_Ginger_8
       rect:
         serializedVersion: 2
-        x: 114
-        y: 152
-        width: 32
-        height: 32
+        x: 118
+        y: 158
+        width: 22
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb7bdece03577d54fa484843c15ebd83
+      spriteID: f93b95b4165430f48a65c9f60c3786fb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_9
+      name: SPA_Player_Ginger_9
       rect:
         serializedVersion: 2
-        x: 152
-        y: 152
-        width: 32
-        height: 32
+        x: 8
+        y: 120
+        width: 22
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bca30600165a5a2428b18e321bdf3ad1
+      spriteID: 5bab72ddc693d124583b1aad0b0631e0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_10
+      name: SPA_Player_Ginger_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 114
-        width: 32
-        height: 32
+        x: 44
+        y: 122
+        width: 22
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f93a273af393c6048a31ac9e74b3dc20
+      spriteID: f0d33f125f07a434d9cbc15705f5d8c9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_11
+      name: SPA_Player_Ginger_11
       rect:
         serializedVersion: 2
-        x: 38
-        y: 114
-        width: 32
-        height: 32
+        x: 82
+        y: 122
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbd3c6cba37334b47bece9e7f32d20d8
+      spriteID: 8ba085922c405e74c94314e54775c768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_12
+      name: SPA_Player_Ginger_12
       rect:
         serializedVersion: 2
-        x: 76
-        y: 114
-        width: 32
-        height: 32
+        x: 118
+        y: 122
+        width: 20
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ced520460269f014ca609a86b94064b9
+      spriteID: bbb050325cd87e348bdf75eafea9e25e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_13
+      name: SPA_Player_Ginger_13
       rect:
         serializedVersion: 2
-        x: 114
-        y: 114
-        width: 32
-        height: 32
+        x: 156
+        y: 120
+        width: 24
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32129b61115cf874cbef185a8ddea3a3
+      spriteID: a409a8565d89c014ea9361b146af9fa0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_14
+      name: SPA_Player_Ginger_14
       rect:
         serializedVersion: 2
-        x: 152
-        y: 114
-        width: 32
-        height: 32
+        x: 6
+        y: 82
+        width: 22
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 474bb5c73ef55d4469bec24a91fc7b01
+      spriteID: 339efedee99c9994d98aaced5a8ec229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_15
+      name: SPA_Player_Ginger_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 76
-        width: 32
-        height: 32
+        x: 44
+        y: 82
+        width: 22
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 684db73c3d773ce4994d7438ab2e9fef
+      spriteID: 2bd812c66f609ff4994539b0295cd464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_16
+      name: SPA_Player_Ginger_16
       rect:
         serializedVersion: 2
-        x: 38
-        y: 76
-        width: 32
-        height: 32
+        x: 4
+        y: 48
+        width: 22
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 892cfcc57423bc24fbf0bd53dd3f3cfe
+      spriteID: b56ceb2131362814a8de464cad52cf4d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_17
+      name: SPA_Player_Ginger_17
       rect:
         serializedVersion: 2
-        x: 76
-        y: 76
-        width: 32
-        height: 32
+        x: 40
+        y: 48
+        width: 24
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c933103d7d9fb79438cb844d51d9cd55
+      spriteID: 6caa3823862c48549a91990d91ff9dd5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_18
+      name: SPA_Player_Ginger_18
       rect:
         serializedVersion: 2
-        x: 114
-        y: 76
-        width: 32
-        height: 32
+        x: 88
+        y: 48
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31a105306cfefd24cb03ee454144c311
+      spriteID: 9f3489a221e8f9047ad6aea982bec8af
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_19
+      name: SPA_Player_Ginger_19
       rect:
         serializedVersion: 2
-        x: 152
-        y: 76
-        width: 32
-        height: 32
+        x: 4
+        y: 6
+        width: 22
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c5da1ae1be0d86419113bed8027d03a
+      spriteID: 542330a40c323c64597bc662ce628236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_20
+      name: SPA_Player_Ginger_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 38
-        width: 32
-        height: 32
+        x: 44
+        y: 6
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24c58cbbad7a9ea4e8c9067c9d62d7ac
+      spriteID: 696641b3a2ad0144bba997d82341be28
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_21
+      name: SPA_Player_Ginger_21
       rect:
         serializedVersion: 2
-        x: 38
-        y: 38
-        width: 32
-        height: 32
+        x: 82
+        y: 8
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e997c038cb8ded845a501fd96be6b470
+      spriteID: f5502674542eb5d42b0347e20e060500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_22
+      name: SPA_Player_Ginger_22
       rect:
         serializedVersion: 2
-        x: 76
-        y: 38
-        width: 32
-        height: 32
+        x: 120
+        y: 10
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0ef7c299a565a447b4a53733f7269f4
+      spriteID: 1bd6569649f48b84ebeceb3c1ab6b7e7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_23
+      name: SPA_Player_Ginger_23
       rect:
         serializedVersion: 2
-        x: 114
-        y: 38
-        width: 32
-        height: 32
+        x: 158
+        y: 8
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c95a81df84d3de44859c6385aca75c1
+      spriteID: 70b4e223f9ae9b44db785d68bd22912a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_24
+      name: SPA_Player_Ginger_24
       rect:
         serializedVersion: 2
-        x: 152
-        y: 38
-        width: 32
-        height: 32
+        x: 194
+        y: 8
+        width: 22
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f506a2b0e635ca4cb6e744d0f77797d
+      spriteID: a18bcde0fe6b4ac46a9eeb27675d6c19
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_25
+      name: SPA_Player_Ginger_25
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 230
+        y: 8
+        width: 24
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 890630ca89a477f4fa2142d9efb38c55
+      spriteID: 3a8ab4a89ac25d84f8920437f08be72b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_26
+      name: SPA_Player_Ginger_26
       rect:
         serializedVersion: 2
-        x: 38
-        y: 0
-        width: 32
-        height: 32
+        x: 268
+        y: 12
+        width: 24
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c73695e66e1f66545ba7572f71fa66e8
+      spriteID: d21d1ad124151564ab6ad43a9cd2b99b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_27
+      name: SPA_Player_Ginger_27
       rect:
         serializedVersion: 2
-        x: 76
-        y: 0
-        width: 32
-        height: 32
+        x: 306
+        y: 12
+        width: 24
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc29f7f901157ec479bbb7e7272b7303
+      spriteID: 15f38e78396cdaa4aba0bda4fb8edba0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_28
+      name: SPA_Player_Ginger_28
       rect:
         serializedVersion: 2
-        x: 114
-        y: 0
-        width: 32
-        height: 32
+        x: 344
+        y: 10
+        width: 24
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5444a27fceb86504a8e6802f90473343
+      spriteID: 3d409ae1e1150c5438aa65c34746dfb8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Rock_Grass_Water_29
+      name: SPA_Player_Ginger_29
       rect:
         serializedVersion: 2
-        x: 152
-        y: 0
-        width: 32
-        height: 32
+        x: 275
+        y: 8
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -730,7 +730,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e555f79f18f1deb41a3715d0044aeccc
+      spriteID: 6208c4fc398882e46b0a685f0a3d8ee6
       vertices: []
       indices: 
       edges: []
@@ -738,7 +738,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4ca560125e3527a4db7e7d91362ac149
+    spriteID: 74a434ed6ec71f549b5d54e5bbbc8d7b
     vertices: []
     indices: 
     edges: []
