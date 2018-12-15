@@ -17,7 +17,9 @@ public class Player : MonoBehaviour {
     private Rigidbody2D rigidBody;
     // private SpriteRenderer spriteRenderer;
     private Animator animator;
-    private Collider2D collider2D;
+
+    private CapsuleCollider2D bodyCollider2D;
+    private Collider2D feetCollider2D;
 
     // Others
 
@@ -28,6 +30,13 @@ public class Player : MonoBehaviour {
     private bool isAlive = true;
 
     private bool isClimbing = false;
+
+    private bool hasJumped = false;
+
+    bool isTouchingGround = false;
+    bool isTouchingLadder = false;
+
+    bool waitForLand = false;
 
     // Use this for initialization
     void Start ()
@@ -40,11 +49,21 @@ public class Player : MonoBehaviour {
 
         animator = GetComponent<Animator>();
 
-        collider2D = GetComponent<Collider2D>();
+        bodyCollider2D = GetComponent<CapsuleCollider2D>();
+
+        feetCollider2D = GetComponent<BoxCollider2D>();
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
+    {
+ 
+
+
+    }
+
+    // Update is called once per frame
+    void FixedUpdate ()
     {
         MovePlayer();
 
@@ -53,35 +72,40 @@ public class Player : MonoBehaviour {
 
     private void MovePlayer()
     {
-        MoveHorizontal();
+        isTouchingGround = feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        isTouchingLadder = feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Ladder"));
 
         if (!Jump())
         {
-            ClimbLadder();
+            if (!ClimbLadder())
+            {
+                //MoveHorizontal();
+            }
         }
 
-        //if (rigidBody.gravityScale >= defaultGravity)
+        MoveHorizontal();
+
+        if (waitForLand && isTouchingGround)
         {
-            //if (animator.GetBool("Climbing") == false)
-            {
-               
-            }
+            hasJumped = false;
+            waitForLand = false;
+
+            //animator.SetBool("Rolling", true);
+
+            Debug.Log("Landed");
         }
 
-            /*
-            if (!Jump())
-            {
+        if (rigidBody.velocity.y < 0f && hasJumped)
+        {
+            waitForLand = true;
+        }
 
-                ClimbLadder();
-            }
-            */
-        
     }
 
 
-    private void ClimbLadder()
+    private bool ClimbLadder()
     {
-        bool isTouchingLadder = collider2D.IsTouchingLayers(LayerMask.GetMask("Ladder"));
+        //isTouchingLadder = collider2D.IsTouchingLayers(LayerMask.GetMask("Ladder"));
 
         if (!isTouchingLadder)
         {
@@ -90,12 +114,12 @@ public class Player : MonoBehaviour {
 
             animator.SetBool("Climbing", false);
 
-           
-
-            return;
+            return false;
         }
 
-        Debug.Log("Touching Ladder");
+        animator.SetBool("Climbing", true);
+
+        //Debug.Log("Touching Ladder");
 
         //isClimbing = true;
 
@@ -108,7 +132,9 @@ public class Player : MonoBehaviour {
 
         if (Mathf.Abs(vert) > minPlayerSpeed)
         {
-            animator.SetBool("Climbing", true);
+            //Debug.Log("Climbing Ladder");
+
+            //animator.SetBool("Climbing", true);
 
             Vector2 vel = rigidBody.velocity;
 
@@ -120,38 +146,48 @@ public class Player : MonoBehaviour {
         {
             //rigidBody.velocity = Vector2.zero;
 
-            animator.SetBool("Climbing", false);
+            //animator.SetBool("Climbing", false);
         }
 
+        return true;
     }
 
     private bool Jump()
     {
-        bool isTouchingGround = collider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
-        bool isTouchingLadder = collider2D.IsTouchingLayers(LayerMask.GetMask("Ladder"));
+        //isTouchingGround = collider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        //isTouchingLadder = collider2D.IsTouchingLayers(LayerMask.GetMask("Ladder"));
 
         if (!isTouchingGround || isTouchingLadder)
         //if (!isTouchingGround  ||  animator.GetBool("Climbing") == true)
         {
-            return false;
+
+            //animator.SetBool("Jumping", true);
+
+            return false;          
         }
 
         //float vert = CrossPlatformInputManager.GetAxis("Vertical");
 
         bool isJump = CrossPlatformInputManager.GetButtonDown("Jump");
 
-            //if (vert >= minPlayerSpeed)
-            if (isJump)
-            {
-                //rigidBody.gravityScale = defaultGravity;
+        //if (vert >= minPlayerSpeed)
+        if (isJump)
+        {
+            Debug.Log("Jumped");
 
-                //rigidBody.AddForce(new Vector2(0f, 10f));
-                Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
+            //animator.SetBool("Jumping", true);
 
-                rigidBody.velocity += jumpVelocity;
+            //rigidBody.gravityScale = defaultGravity;
 
-                return true;
-            }
+            //rigidBody.AddForce(new Vector2(0f, 10f));
+            Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
+
+            rigidBody.velocity += jumpVelocity;
+
+            hasJumped = true;
+
+            return true;
+        }
 
         return false;
     }

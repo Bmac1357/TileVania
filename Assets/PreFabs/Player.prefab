@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114405678139995200}
   - component: {fileID: 50465150070685828}
   - component: {fileID: 61194529959082466}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1954917873453888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.65, y: 1.33, z: 0}
+  m_LocalPosition: {x: -5.65, y: 1.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0075397342, y: 0}
+  m_Offset: {x: -0.015368462, y: 0.0031314492}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -87,7 +87,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18492052, y: 0.28}
+  m_Size: {x: 0.35715294, y: 0.5555719}
   m_EdgeRadius: 0
 --- !u!95 &95087304321343180
 Animator:
@@ -118,9 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d3bc9e7fbbca804e933efb008ac854c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 100
+  runSpeed: 150
   climbSpeed: 100
-  minPlayerSpeed: 0.01
+  minPlayerSpeed: 0.001
   jumpSpeed: 12
 --- !u!212 &212987133927603214
 SpriteRenderer:
