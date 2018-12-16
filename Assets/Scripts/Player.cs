@@ -35,6 +35,7 @@ public class Player : MonoBehaviour {
 
     bool isTouchingGround = false;
     bool isTouchingLadder = false;
+    bool isTouchingEnemy = false;
 
     bool waitForLand = false;
 
@@ -45,8 +46,6 @@ public class Player : MonoBehaviour {
 
         defaultGravity = rigidBody.gravityScale;
 
-        //spriteRenderer = GetComponent<SpriteRenderer>();
-
         animator = GetComponent<Animator>();
 
         bodyCollider2D = GetComponent<CapsuleCollider2D>();
@@ -55,19 +54,32 @@ public class Player : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
- 
+        CheckEnemyHit();
 
+        if (isAlive)
+        {
+            MovePlayer();
+        }
 
     }
 
-    // Update is called once per frame
-    void FixedUpdate ()
+    private void CheckEnemyHit()
     {
-        MovePlayer();
+        // Check if body / feet collider touched enemy
+        if ((bodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")) || feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")) ) && isAlive)
+        {
+            isAlive = false;
 
+            animator.SetTrigger("Die");
 
+            Vector2 vel = rigidBody.velocity;
+
+            vel.y = 2.0f * jumpSpeed;
+
+            rigidBody.velocity = vel;
+        }
     }
 
     private void MovePlayer()
@@ -102,6 +114,14 @@ public class Player : MonoBehaviour {
 
     }
 
+    /*
+    private void Death()
+    {
+        isAlive = false;
+
+        animator.SetBool("IsAlive", isAlive);
+    }
+    */
 
     private bool ClimbLadder()
     {

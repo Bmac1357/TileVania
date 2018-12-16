@@ -23,7 +23,8 @@ GameObject:
   - component: {fileID: 212987133927603214}
   - component: {fileID: 114405678139995200}
   - component: {fileID: 50465150070685828}
-  - component: {fileID: 61194529959082466}
+  - component: {fileID: 70207584487810916}
+  - component: {fileID: 61071537129218950}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1954917873453888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.65, y: 1.43, z: 0}
+  m_LocalPosition: {x: -5.65, y: 1.551, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,7 +65,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &61194529959082466
+--- !u!61 &61071537129218950
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -76,19 +77,34 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.015368462, y: 0.0031314492}
+  m_Offset: {x: -0.036868334, y: -0.35212058}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4, y: 0.56}
+    oldSize: {x: 0.625, y: 0.875}
     newSize: {x: 0.24, y: 0.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35715294, y: 0.5555719}
+  m_Size: {x: 0.5115514, y: 0.13877618}
   m_EdgeRadius: 0
+--- !u!70 &70207584487810916
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1954917873453888}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 92b269be3f703d9439f2e8d9c7426e1d, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04233551, y: 0.017727017}
+  m_Size: {x: 0.58764267, y: 0.85509825}
+  m_Direction: 0
 --- !u!95 &95087304321343180
 Animator:
   serializedVersion: 3
@@ -155,7 +171,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -936142969
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300042, guid: 252f2100e655469419ba3bd58608b173, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
