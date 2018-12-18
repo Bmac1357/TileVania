@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        bool isTouchingWall = edgeCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        bool isTouchingWall   = edgeCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
         bool isTouchingGround = feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
 
         if (isTouchingWall || !isTouchingGround)
@@ -37,9 +37,6 @@ public class Enemy : MonoBehaviour
         }
 
         MoveEnemy();    
-        
-      
-
     }
 
     /*

@@ -6,6 +6,8 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour {
 
     // Config
+    [SerializeField] bool Immune = true;
+
     [SerializeField] float runSpeed;
     [SerializeField] float climbSpeed;
 
@@ -33,8 +35,9 @@ public class Player : MonoBehaviour {
 
     private bool hasJumped = false;
 
-    bool isTouchingGround = false;
-    bool isTouchingLadder = false;
+    bool isFeetTouchingGround = false;
+    bool isFeetTouchingLadder = false;
+    bool isBodyTouchingLadder = false;
     bool isTouchingEnemy = false;
 
     bool waitForLand = false;
@@ -43,6 +46,8 @@ public class Player : MonoBehaviour {
     void Start ()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+
+        rigidBody.freezeRotation = true;
 
         defaultGravity = rigidBody.gravityScale;
 
@@ -56,7 +61,10 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        CheckEnemyHit();
+        if (!Immune)
+        {
+            CheckEnemyHit();
+        }
 
         if (isAlive)
         {
@@ -67,25 +75,38 @@ public class Player : MonoBehaviour {
 
     private void CheckEnemyHit()
     {
-        // Check if body / feet collider touched enemy
-        if ((bodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")) || feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")) ) && isAlive)
+        if (isAlive)
         {
-            isAlive = false;
+            if ( bodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy"))  || feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")) ||
+                 bodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Hazard")) || feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Hazard"))
+                )
+            // Check if body / feet collider touched enemy
+            //if ( (bodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy"))  || feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy"))) ||
+            //     (bodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Hazard")) || feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Hazard"))) )
+            {
+                isAlive = false;
 
-            animator.SetTrigger("Die");
+                animator.SetTrigger("Die");
 
-            Vector2 vel = rigidBody.velocity;
+                Vector2 vel = rigidBody.velocity;
 
-            vel.y = 2.0f * jumpSpeed;
+                vel.y = 2.0f * jumpSpeed;
 
-            rigidBody.velocity = vel;
+                //rigidBody.freezeRotation = false;
+
+                rigidBody.velocity = vel;
+            }
         }
     }
 
     private void MovePlayer()
     {
-        isTouchingGround = feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
-        isTouchingLadder = feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Ladder"));
+        isFeetTouchingGround = feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        isFeetTouchingLadder = feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Ladder"));
+
+        isBodyTouchingLadder = bodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Ladder"));
+
+        MoveHorizontal();
 
         if (!Jump())
         {
@@ -95,9 +116,7 @@ public class Player : MonoBehaviour {
             }
         }
 
-        MoveHorizontal();
-
-        if (waitForLand && isTouchingGround)
+        if (waitForLand && isFeetTouchingGround)
         {
             hasJumped = false;
             waitForLand = false;
@@ -127,7 +146,7 @@ public class Player : MonoBehaviour {
     {
         //isTouchingLadder = collider2D.IsTouchingLayers(LayerMask.GetMask("Ladder"));
 
-        if (!isTouchingLadder)
+        if (!isFeetTouchingLadder)
         {
             // Reset default gravity
             rigidBody.gravityScale = defaultGravity;
@@ -177,7 +196,8 @@ public class Player : MonoBehaviour {
         //isTouchingGround = collider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
         //isTouchingLadder = collider2D.IsTouchingLayers(LayerMask.GetMask("Ladder"));
 
-        if (!isTouchingGround || isTouchingLadder)
+        //if (!isFeetTouchingGround || isBodyTouchingLadder)
+        if (!isFeetTouchingGround || isBodyTouchingLadder)
         //if (!isTouchingGround  ||  animator.GetBool("Climbing") == true)
         {
 
@@ -224,9 +244,6 @@ public class Player : MonoBehaviour {
         vel.x = hz * runSpeed * Time.deltaTime;
 
         rigidBody.velocity = vel;
-
-        //
-        //Debug.Log(vel);
 
         //
         bool hasHorizontalSpeed = (Mathf.Abs(vel.x) > Mathf.Epsilon);
