@@ -23,6 +23,7 @@ public class LevelExit : MonoBehaviour {
         // leave by exit
 
         //StartCoroutine("ExitLevel");
+
         StartCoroutine("WaitForTime");
     }
 
@@ -50,8 +51,11 @@ public class LevelExit : MonoBehaviour {
         int buildIndex = SceneManager.GetActiveScene().buildIndex;
 
         buildIndex++;
-
-        SceneManager.LoadScene(buildIndex);
+       
+        //if (buildIndex <  SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(buildIndex);
+        }
     }
 
 
