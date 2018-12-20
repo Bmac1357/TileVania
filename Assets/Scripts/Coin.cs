@@ -22,9 +22,13 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Only check for player capsule collider, otherwise get two collisions !!
         if (collision is CapsuleCollider2D)
         {
-            gameSession.UpdateScore(coinScore);
+            if (gameSession)
+            {
+                gameSession.UpdateScore(coinScore);
+            }
 
             AudioSource.PlayClipAtPoint(coinPickSFX, Camera.main.transform.position);
 
