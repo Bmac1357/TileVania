@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114571634591643964}
   - component: {fileID: 212831680224198480}
   - component: {fileID: 61918545871080536}
+  - component: {fileID: 114826256125858508}
   m_Layer: 14
   m_Name: LevelExit
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1195953160894086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.552797, y: -3.4445815, z: 0}
+  m_LocalPosition: {x: 52.488, y: -3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,6 +79,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70060674a6a36f4c8d499a1a3ffc58f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayLevelTime: 2
+  levelExitSlowMo: 0.5
+  fadeOut: {fileID: 114819560533947162, guid: 1886b6276ff9073448fe6ef576d54064, type: 2}
+--- !u!114 &114826256125858508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1195953160894086}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8139e7e94d8a5d74b9868f0fe4646c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 2
+  fadeTexture: {fileID: 2800000, guid: 88ffab3225fab7e41a0a85c6de21a765, type: 3}
+  drawDepth: -1000
+  fadeSpeed: 0.5
+  fadeDir: 1
 --- !u!212 &212831680224198480
 SpriteRenderer:
   m_ObjectHideFlags: 1

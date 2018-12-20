@@ -84,18 +84,31 @@ public class Player : MonoBehaviour {
             //if ( (bodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy"))  || feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy"))) ||
             //     (bodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Hazard")) || feetCollider2D.IsTouchingLayers(LayerMask.GetMask("Hazard"))) )
             {
-                isAlive = false;
-
-                animator.SetTrigger("Die");
-
-                Vector2 vel = rigidBody.velocity;
-
-                vel.y = 2.0f * jumpSpeed;
-
-                //rigidBody.freezeRotation = false;
-
-                rigidBody.velocity = vel;
+                Die();
             }
+        }
+    }
+
+    private void Die()
+    {
+        isAlive = false;
+
+        animator.SetTrigger("Die");
+
+        Vector2 vel = rigidBody.velocity;
+
+        vel.y = 2.0f * jumpSpeed;
+
+        //rigidBody.freezeRotation = false;
+
+        rigidBody.velocity = vel;
+
+        //
+        GameSession gameSession = GameObject.FindObjectOfType<GameSession>();
+
+        if (gameSession)
+        {
+            gameSession.ProcessPlayerDeath();
         }
     }
 
@@ -132,15 +145,6 @@ public class Player : MonoBehaviour {
         }
 
     }
-
-    /*
-    private void Death()
-    {
-        isAlive = false;
-
-        animator.SetBool("IsAlive", isAlive);
-    }
-    */
 
     private bool ClimbLadder()
     {

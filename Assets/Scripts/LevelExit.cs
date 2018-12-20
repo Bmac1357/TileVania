@@ -21,12 +21,16 @@ public class LevelExit : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // leave by exit
+        //Destroy(FindObjectOfType<ScenePersist>());
+
+        //Debug.Log("Destroy ScenePersist");
 
         //StartCoroutine("ExitLevel");
 
         StartCoroutine("WaitForTime");
     }
 
+    /*
     IEnumerator ExitLevel()
     {
         int buildIndex = SceneManager.GetActiveScene().buildIndex;
@@ -37,9 +41,14 @@ public class LevelExit : MonoBehaviour {
 
         SceneManager.LoadScene(buildIndex);
     }
+    */
 
     IEnumerator WaitForTime()
     {
+        Destroy(FindObjectOfType<ScenePersist>());
+
+        Debug.Log("Destroy ScenePersist");
+
         Time.timeScale = levelExitSlowMo;
 
         Instantiate(fadeOut, transform.position, Quaternion.identity);
