@@ -20,20 +20,20 @@ public class GameSession : MonoBehaviour {
 
     [SerializeField] Text scoreText;
 
+    DisplayLives displayLives;
+
+
     //ScoreText scoreText;
 
     //[SerializeField] LivesText livesText;
 
     float defaultTimeValue;
 
-    private void OnDestroy()
-    {
-          
-    }
 
     private void Awake()
     {
         int numGameSessions = FindObjectsOfType<GameSession>().Length;
+
 
         if (numGameSessions > 1)
         {
@@ -46,11 +46,19 @@ public class GameSession : MonoBehaviour {
             //scoreText = GetComponentInChildren<ScoreText>();
         }
 
+        //
+
+ 
+
+        //Debug.Log("Display Lives = " + displayLives);
+
     }
 
     // Use this for initialization
     void Start ()
     {
+        displayLives = GetComponentInChildren<DisplayLives>();
+
         defaultTimeValue = Time.timeScale;
 
         //scoreText = GetComponentInChildren<ScoreText>();
@@ -63,6 +71,8 @@ public class GameSession : MonoBehaviour {
 
     public void UpdateScore(int newScore)
     {
+    
+
         score += newScore;
 
         //scoreText.UpdateScore(score);     
@@ -71,12 +81,12 @@ public class GameSession : MonoBehaviour {
        
     }
 
-    /*
+    
     public int GetPlayerLives()
     {
         return playerLives;
     }
-    */
+    
 
     public void ProcessPlayerDeath()
     { 
@@ -118,13 +128,14 @@ public class GameSession : MonoBehaviour {
     {
         playerLives--;
 
-        //livesText.UpdateLives(playerLives);
+        //
 
         StartCoroutine("ResetCurrentLevel");
     }
 
     IEnumerator ResetCurrentLevel()
     {
+
         Time.timeScale = levelExitSlowMo;
 
         Instantiate(fadeOut, transform.position, Quaternion.identity);
@@ -133,10 +144,17 @@ public class GameSession : MonoBehaviour {
 
         Time.timeScale = defaultTimeValue;
 
+
         // Reload current scene
         int buildIndex = SceneManager.GetActiveScene().buildIndex;
 
         SceneManager.LoadScene(buildIndex);
+
+        //
+
+        displayLives.UpdateLives();
+
+        //
     }
 
 }
