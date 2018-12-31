@@ -11393,7 +11393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5.8499756, y: 132}
+  m_AnchoredPosition: {x: 5.8499756, y: -160}
   m_SizeDelta: {x: -442.07, y: -389.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881540148
@@ -11635,11 +11635,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4465579740489528, guid: eb449f0a49c76514c8aa5235f1515216, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.9723203
+      value: 0.09016681
       objectReference: {fileID: 0}
     - target: {fileID: 4465579740489528, guid: eb449f0a49c76514c8aa5235f1515216, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.4955416
+      value: 6.4922976
       objectReference: {fileID: 0}
     - target: {fileID: 4465579740489528, guid: eb449f0a49c76514c8aa5235f1515216, type: 2}
       propertyPath: m_LocalPosition.z
@@ -11908,7 +11908,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7.0200195, y: -140}
+  m_AnchoredPosition: {x: 7.0200195, y: 115}
   m_SizeDelta: {x: -318.66, y: -345.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1046703225
@@ -11964,7 +11964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16470587, g: 0.8509804, b: 0.2132485, a: 1}
+  m_Color: {r: 0.16470587, g: 0.8509804, b: 0.2132485, a: 0.25882354}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12720,15 +12720,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22400002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 11.6
+      value: 11.599976
       objectReference: {fileID: 0}
     - target: {fileID: 22400002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
       propertyPath: m_AnchoredPosition.y
@@ -12784,7 +12784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
